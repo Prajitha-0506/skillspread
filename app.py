@@ -40,8 +40,8 @@ st.markdown("---")
 data = pd.read_csv("skillspread_dataset.csv")
 roles_from_data = sorted(data['job_role'].str.title().unique())
 
-model = joblib.load("C:/Users/Asus/Downloads/SkillSpread/model/job_role_predictor.pkl")
-vectorizer = joblib.load("C:/Users/Asus/Downloads/SkillSpread/model/skill_vectorizer.pkl")
+model = joblib.load("model/job_role_predictor.pkl")
+vectorizer = joblib.load("model/skill_vectorizer.pkl")
 job_roles = model.classes_
 
 
