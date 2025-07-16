@@ -21,7 +21,7 @@ def get_base64_of_bin_file(bin_file):
         data = f.read()
     return base64.b64encode(data).decode()
 
-img_base64 = get_base64_of_bin_file("logo.png")
+img_base64 = get_base64_of_bin_file("logo1.png")
 
 st.markdown(
     f"""
