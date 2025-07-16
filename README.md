@@ -19,14 +19,14 @@ SkillSpread is a skill gap analyzer that helps aspiring professionals match thei
 
 ## 📁 File Structure
 skillspread/
-├── app.py
-├── model/
-│ ├── job_role_predictor.pkl
-│ └── skill_vectorizer.pkl
-├── skillspread_dataset.csv
-├── requirements.txt
-├── logo.png
-└── .gitignore
+      app.py
+      model/
+           job_role_predictor.pkl
+           skill_vectorizer.pkl
+      skillspread_dataset.csv
+      requirements.txt
+      logo.png
+      .gitignore
 
 ## 🤖 How It Works
 1. Enter your current skills
