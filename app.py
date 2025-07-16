@@ -26,14 +26,14 @@ img_base64 = get_base64_of_bin_file("logo.png")
 st.markdown(
     f"""
     <div style='text-align: center; margin-top: -90px;'>
-        <div style='background-color:#222; padding:10px; border-radius:12px; display:inline-block;'>
-            <img src='data:image/png;base64,{img_base64}' width='250' style='margin-bottom: -5px;'/>
-        </div>
+        <img src='data:image/png;base64,{img_base64}' width='250' 
+        style='margin-bottom:-5px; filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.5));'/>
         <h1 style="margin-top: 10px;">🚀 SkillSpread : Level Up. Break In. Stand Out</h1>
     </div>
     """,
     unsafe_allow_html=True
 )
+
 
 
 st.write("👋 Welcome to SkillSpread - A way you can find how to land on your dream job by finding the skills that are required for your dream job")
