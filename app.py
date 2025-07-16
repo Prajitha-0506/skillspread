@@ -225,11 +225,11 @@ if st.button('Analyze Skills'):
                 border: 1px solid #444;
                 padding: 10px;
                 text-align: left;
-                color: white
+                color: inherit
             }}
             th {{
                 background-color: #1f1f1f;
-                color: white;
+                color: inherit;
             }}
             tr:nth-child(even) {{
                 background-color: #2c2c2c;
