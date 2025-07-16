@@ -26,8 +26,10 @@ img_base64 = get_base64_of_bin_file("logo.png")
 st.markdown(
     f"""
     <div style='text-align: center; margin-top: -90px;'>
-        <img src='data:image/png;base64,{img_base64}' width='250' style='margin-bottom: -50px';/>
-        <h1 style="margin-top: 0px;">🚀 SkillSpread : Level Up. Break In. Stand Out</h1>
+        <div style='background-color:#222; padding:10px; border-radius:12px; display:inline-block;'>
+            <img src='data:image/png;base64,{img_base64}' width='250' style='margin-bottom: -5px;'/>
+        </div>
+        <h1 style="margin-top: 10px;">🚀 SkillSpread : Level Up. Break In. Stand Out</h1>
     </div>
     """,
     unsafe_allow_html=True
