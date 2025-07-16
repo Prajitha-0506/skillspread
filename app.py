@@ -224,23 +224,24 @@ if st.button('Analyze Skills'):
                 margin-top: 10px;
             }}
             th, td {{
-                border: 1px solid #444;
+                border: 1px solid #ccc;
                 padding: 10px;
                 text-align: left;
-                color: inherit
+                color: inherit;
+                background-color: inherit;
             }}
             th {{
-                background-color: #1f1f1f;
-                color: inherit;
+                font-weight: bold;
+                background-color: rgba(0, 0, 0, 0.05);  /* subtle gray for both themes */
             }}
             tr:nth-child(even) {{
-                background-color: #2c2c2c;
+                background-color: rgba(0, 0, 0, 0.03);  /* light gray row */
             }}
             a {{
                 color: #4da6ff;
                 text-decoration: none;
             }}
-            a:hover {{
+                a:hover {{
                 text-decoration: underline;
             }}
             </style>
@@ -253,11 +254,11 @@ if st.button('Analyze Skills'):
                         <th>💰 Paid Resources</th>
                     </tr>
                 </thead>
-                <tbody>
-                    {table_rows}
-                </tbody>
-            </table>
-        """
+            <tbody>
+                {table_rows}
+            </tbody>
+        </table>
+    """
 
         import streamlit.components.v1 as components
 
