@@ -5,7 +5,7 @@ dataset = []
 #Role-1 : Data Analyst
 dataset.append({
     "job_role": "data analyst",
-    "core_skills": "sql, excel, python, data analysis, pandas, statistics",
+    "core_skills": "sql, excel, python, data analysis, pandas, statistics, power bi",
     "optional_skills": "tableau, r, communication, data visualization",
     "skill_resources": json.dumps({
         "sql": {
@@ -31,6 +31,10 @@ dataset.append({
         "statistics": {
             "free": "[Khan Academy – Statistics](https://www.khanacademy.org/math/statistics-probability)",
             "paid": "[Coursera – Stanford Statistics](https://www.coursera.org/learn/stanford-statistics)"
+        },
+        "power bi": {
+            "free": "[Microsoft](https://learn.microsoft.com/en-us/training/powerplatform/power-bi)",
+            "paid": "[Linkedin Learning](https://www.linkedin.com/learning/power-bi-essential-training)"
         }
     })
 })
@@ -745,5 +749,5 @@ for row in dataset:
     row['skill_resources'] = json.dumps(row['skill_resources'])
 
 df = pd.DataFrame(dataset)
-df.to_csv("skillbridge_dataset.csv", index=False)
-df.to_excel("skillbridge_dataset.xlsx", index=False)
+df.to_csv("skillspread_dataset.csv", index=False)
+df.to_excel("skillspread_dataset.xlsx", index=False)

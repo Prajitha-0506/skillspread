@@ -1,6 +1,39 @@
-.ipynb_checkpoints/
+# Python cache files
 __pycache__/
-*.pyc
-*.pkl
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+
+# Jupyter Notebook checkpoints (if you ever use them)
+.ipynb_checkpoints/
+
+# Environment files
 .env
+.venv/
+venv/
+ENV/
+
+# VSCode or IDE files
+.vscode/
+.idea/
+
+# OS-specific
 .DS_Store
+Thumbs.db
+
+# Streamlit config
+.streamlit/
+
+# Model files - OPTIONAL (if already in GitHub, don't ignore)
+*.pkl
+
+# Log files or dumps
+*.log
+
+# Docker-related
+*.tar
+docker-compose.override.yml
+
+
+*.pkl
